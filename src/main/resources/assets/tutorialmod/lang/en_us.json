@@ -12,5 +12,9 @@
   "item.tutorialmod.bismuth": "Bismuth",
   "item.tutorialmod.raw_bismuth": "Raw Bismuth",
   "block.tutorialmod.bismuth_block": "Block of Bismuth",
-  "block.tutorialmod.raw_bismuth_block": "Block of Raw Bismuth"
+  "block.tutorialmod.raw_bismuth_block": "Block of Raw Bismuth",
+
+  "itemgroup.tutorialmod.pink_garnet_items": "Pink Garnet Items",
+  "itemgroup.tutorialmod.bismuth_items": "Bismuth Items",
+  "itemgroup.tutorialmod.alexandrite_items": "Alexandrite Items"
 }
