@@ -21,6 +21,8 @@ public class ModItemGroups {
                             entries.add(ModItems.RAW_PINK_GARNET);
                             entries.add(ModBlocks.PINK_GARNET_BLOCK);
                             entries.add(ModBlocks.RAW_PINK_GARNET_BLOCK);
+                            entries.add(ModBlocks.PINK_GARNET_DEEPSLATE_ORE);
+                            entries.add(ModBlocks.PINK_GARNET_ORE );
                     }).build());
 
     public static final ItemGroup ALEXANDRITE_ITEMS_GROUP = Registry.register(Registries.ITEM_GROUP,
@@ -32,6 +34,8 @@ public class ModItemGroups {
                         entries.add(ModItems.RAW_ALEXANDRITE);
                         entries.add(ModBlocks.ALEXANDRITE_BLOCK);
                         entries.add(ModBlocks.RAW_ALEXANDRITE_BLOCK);
+                        entries.add(ModBlocks.ALEXANDRITE_DEEPSLATE_ORE);
+                        entries.add(ModBlocks.ALEXANDRITE_ORE );
                     }).build());
 
     public static final ItemGroup BISMUTH_ITEMS_GROUP = Registry.register(Registries.ITEM_GROUP,
@@ -42,7 +46,10 @@ public class ModItemGroups {
                         entries.add(ModItems.BISMUTH);
                         entries.add(ModItems.RAW_BISMUTH);
                         entries.add(ModBlocks.BISMUTH_BLOCK);
-                        entries.add(ModBlocks.RAW_BISMUTH_BLOCK );
+                        entries.add(ModBlocks.RAW_BISMUTH_BLOCK);
+                        entries.add(ModBlocks.BISMUTH_DEEPSLATE_ORE);
+                        entries.add(ModBlocks.BISMUTH_ORE );
+
                     }).build());
 
 
