@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "tutorialmod:block/alexandrite_block"
+    "all": "tutorialmod:block/magic_block"
   }
 }

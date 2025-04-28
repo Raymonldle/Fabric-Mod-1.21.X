@@ -1,10 +1,6 @@
 {
   "replace": false,
   "values": [
-    "tutorialmod:pink_garnet_deepslate_ore",
-
-    "tutorialmod:alexandrite_deepslate_ore",
-
-    "tutorialmod:bismuth_deepslate_ore"
+    "tutorialmod:pink_garnet_deepslate_ore"
   ]
 }
