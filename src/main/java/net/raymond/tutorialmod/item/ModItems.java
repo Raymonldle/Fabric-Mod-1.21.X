@@ -20,12 +20,23 @@ public class ModItems {
     public static final Item PINK_GARNET = registerItem("pink_garnet", new Item(new Item.Settings()));
     public static final Item RAW_PINK_GARNET = registerItem("raw_pink_garnet", new Item(new Item.Settings()));
 
+    public static final Item BISMUTH = registerItem("bismuth", new Item(new Item.Settings()));
+    public static final Item RAW_BISMUTH = registerItem("raw_bismuth", new Item(new Item.Settings()));
+
     public static final Item CHISEL = registerItem("chisel", new ChiselItem(new Item.Settings().maxDamage(32)));
 
     public static final Item CAULIFLOWER = registerItem("cauliflower", new Item(new Item.Settings().food(ModFoodComponents.CAULIFLOWER)){
         @Override
         public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
             tooltip.add(Text.translatable("tooltip.tutorialmod.cauliflower.tooltip"));
+            super.appendTooltip(stack, context, tooltip, type);
+        }
+    });
+
+    public static final Item COKE = registerItem("coke", new Item(new Item.Settings().food(ModFoodComponents.COKE)){
+        @Override
+        public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
+            tooltip.add(Text.translatable("tooltip.tutorialmod.coke.tooltip"));
             super.appendTooltip(stack, context, tooltip, type);
         }
     });

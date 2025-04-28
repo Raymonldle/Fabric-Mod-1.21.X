@@ -21,6 +21,7 @@ public class ModItemGroups {
 
                         entries.add(ModItems.CHISEL);
                         entries.add(ModItems.CAULIFLOWER);
+                        entries.add(ModItems.COKE);
                         entries.add(ModItems.STARLIGHT_ASHES);
                     }).build());
 
@@ -36,6 +37,27 @@ public class ModItemGroups {
                         entries.add(ModBlocks.PINK_GARNET_DEEPSLATE_ORE);
 
                         entries.add(ModBlocks.MAGIC_BLOCK);
+
+                    }).build());
+
+    public static final ItemGroup BISMUTH_ITEMS_GROUP = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(TutorialMod.MOD_ID, "bismuth_items"),
+            FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.BISMUTH))
+                    .displayName(Text.translatable("itemgroup.tutorialmod.bismuth_items"))
+                    .entries((displayContext, entries) -> {
+                        entries.add(ModItems.BISMUTH);
+                        entries.add(ModItems.RAW_BISMUTH);
+
+                    }).build());
+
+    public static final ItemGroup BISMUTH_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(TutorialMod.MOD_ID, "bismuth_blocks"),
+            FabricItemGroup.builder().icon(() -> new ItemStack(ModBlocks.BISMUTH_BLOCK))
+                    .displayName(Text.translatable("itemgroup.tutorialmod.bismuth_blocks"))
+                    .entries((displayContext, entries) -> {
+                        entries.add(ModBlocks.BISMUTH_BLOCK);
+                        entries.add(ModBlocks.BISMUTH_ORE);
+                        entries.add(ModBlocks.BISMUTH_DEEPSLATE_ORE);
 
                     }).build());
 
