@@ -16,4 +16,7 @@ public class ModFoodComponents {
             .snack()
             .statusEffect(new StatusEffectInstance(StatusEffects.SPEED, 200, 0), 0.75F)
             .build();
+
+
+
 }

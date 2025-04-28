@@ -41,6 +41,8 @@ public class ModItems {
         }
     });
 
+    
+
     public static final Item STARLIGHT_ASHES = registerItem("starlight_ashes", new Item(new Item.Settings()));
 
     private static Item registerItem(String name, Item item){
