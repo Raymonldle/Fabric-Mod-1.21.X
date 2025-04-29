@@ -1,6 +1,7 @@
 package net.raymond.tutorialmod.item;
 
 import net.minecraft.component.type.FoodComponent;
+import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 
@@ -14,7 +15,7 @@ public class ModFoodComponents {
             .nutrition(2)
             .saturationModifier(0.25f)
             .snack()
-            .statusEffect(new StatusEffectInstance(StatusEffects.SPEED, 200, 0), 0.75F)
+            .statusEffect(new StatusEffectInstance(StatusEffects.SPEED, 150, 3), 0.75F)
             .build();
 
     public static final FoodComponent COOKED_EGG = new FoodComponent.Builder()
