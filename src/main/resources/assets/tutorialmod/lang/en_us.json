@@ -27,12 +27,10 @@
 
   "block.tutorialmod.magic_block": "Magic Block",
 
-
-  "itemgroup.tutorialmod.pink_garnet_items": "Pink Garnet Items",
-  "itemgroup.tutorialmod.pink_garnet_blocks": "Pink Garnet Blocks",
-  "itemgroup.tutorialmod.bismuth_items": "Bismuth Items",
-  "itemgroup.tutorialmod.bismuth_blocks": "Bismuth Blocks",
   "itemgroup.tutorialmod.alexandrite_group": "Alexandrite",
+  "itemgroup.tutorialmod.bismuth_group": "Bismuth",
+  "itemgroup.tutorialmod.pink_garnet_group": "Pink Garnet",
+  "itemgroup.tutorialmod.miscellaneous_group": "Miscellaneous",
 
   "tooltip.tutorialmod.magic_block.tooltip": "This block is very, very §9MAGICAL§r",
 
@@ -42,5 +40,20 @@
   "tooltip.tutorialmod.cauliflower.tooltip": "This is delicious!",
   "tooltip.tutorialmod.coke.tooltip": "Reminds me of Danny Nguyen...",
   "tooltip.tutorialmod.cooked_egg.tooltip": "I need more §9PROTEIN!§r",
-  "tooltip.tutorialmod.pear.tooltip": "I bet I can eat it in one bite"
+  "tooltip.tutorialmod.pear.tooltip": "I bet I can eat it in one bite",
+
+  "block.tutorialmod.pink_garnet_lamp": "Pink Garnet Lamp",
+
+  "block.tutorialmod.pink_garnet_stairs": "Pink Garnet Stairs",
+  "block.tutorialmod.pink_garnet_slab": "Pink Garnet Slab",
+
+  "block.tutorialmod.pink_garnet_button": "Pink Garnet Button",
+  "block.tutorialmod.pink_garnet_pressure_plate": "Pink Garnet Pressure Plate",
+
+  "block.tutorialmod.pink_garnet_fence": "Pink Garnet Fence",
+  "block.tutorialmod.pink_garnet_fence_gate": "Pink Garnet Fence Gate",
+  "block.tutorialmod.pink_garnet_wall": "Pink Garnet Wall",
+
+  "block.tutorialmod.pink_garnet_door": "Pink Garnet Door",
+  "block.tutorialmod.pink_garnet_trapdoor": "Pink Garnet Trapdoor"
 }
