@@ -23,7 +23,11 @@ public class ModItems {
     public static final Item BISMUTH = registerItem("bismuth", new Item(new Item.Settings()));
     public static final Item RAW_BISMUTH = registerItem("raw_bismuth", new Item(new Item.Settings()));
 
+    public static final Item ALEXANDRITE = registerItem("alexandrite", new Item(new Item.Settings()));
+    public static final Item RAW_ALEXANDRITE = registerItem("raw_alexandrite", new Item(new Item.Settings()));
+
     public static final Item CHISEL = registerItem("chisel", new ChiselItem(new Item.Settings().maxDamage(32)));
+
 
     public static final Item CAULIFLOWER = registerItem("cauliflower", new Item(new Item.Settings().food(ModFoodComponents.CAULIFLOWER)){
         @Override
@@ -32,7 +36,13 @@ public class ModItems {
             super.appendTooltip(stack, context, tooltip, type);
         }
     });
-
+    public static final Item PEAR = registerItem("pear", new Item(new Item.Settings().food(ModFoodComponents.PEAR)){
+        @Override
+        public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
+            tooltip.add(Text.translatable("tooltip.tutorialmod.pear.tooltip"));
+            super.appendTooltip(stack, context, tooltip, type);
+        }
+    });
     public static final Item COKE = registerItem("coke", new Item(new Item.Settings().food(ModFoodComponents.COKE)){
         @Override
         public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
@@ -40,6 +50,15 @@ public class ModItems {
             super.appendTooltip(stack, context, tooltip, type);
         }
     });
+    public static final Item COOKED_EGG = registerItem("cooked_egg", new Item(new Item.Settings().food(ModFoodComponents.COOKED_EGG)){
+        @Override
+        public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
+            tooltip.add(Text.translatable("tooltip.tutorialmod.cooked_egg.tooltip"));
+            super.appendTooltip(stack, context, tooltip, type);
+        }
+    });
+
+
 
     
 

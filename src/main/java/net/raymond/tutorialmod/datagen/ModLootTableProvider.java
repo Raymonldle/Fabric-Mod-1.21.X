@@ -36,10 +36,15 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
         //BISMUTH
         addDrop(ModBlocks.BISMUTH_BLOCK);
-        addDrop(ModBlocks.BISMUTH_ORE, oreDrops(ModBlocks.BISMUTH_ORE, ModItems.RAW_BISMUTH));
 
         addDrop(ModBlocks.BISMUTH_ORE, oreDrops(ModBlocks.BISMUTH_ORE, ModItems.RAW_BISMUTH));
         addDrop(ModBlocks.BISMUTH_DEEPSLATE_ORE, multipleOreDrops(ModBlocks.BISMUTH_DEEPSLATE_ORE, ModItems.RAW_BISMUTH, 3, 7));
+
+        //ALEXANDRITE
+        addDrop(ModBlocks.ALEXANDRITE_BLOCK);
+
+        addDrop(ModBlocks.ALEXANDRITE_ORE, oreDrops(ModBlocks.ALEXANDRITE_ORE, ModItems.RAW_ALEXANDRITE));
+        addDrop(ModBlocks.ALEXANDRITE_DEEPSLATE_ORE, multipleOreDrops(ModBlocks.ALEXANDRITE_DEEPSLATE_ORE, ModItems.RAW_ALEXANDRITE, 3, 7));
     }
 
     public LootTable.Builder multipleOreDrops(Block drop, Item item, float minDrops, float maxDrops) {

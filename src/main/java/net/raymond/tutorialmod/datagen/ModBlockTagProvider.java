@@ -24,12 +24,17 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
                 .add(ModBlocks.BISMUTH_BLOCK)
                 .add(ModBlocks.BISMUTH_ORE)
-                .add(ModBlocks.BISMUTH_DEEPSLATE_ORE);
+                .add(ModBlocks.BISMUTH_DEEPSLATE_ORE)
+
+                .add(ModBlocks.ALEXANDRITE_BLOCK)
+                .add(ModBlocks.ALEXANDRITE_ORE)
+                .add(ModBlocks.ALEXANDRITE_DEEPSLATE_ORE);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.PINK_GARNET_DEEPSLATE_ORE);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
-                .add(ModBlocks.BISMUTH_DEEPSLATE_ORE);
+                .add(ModBlocks.BISMUTH_DEEPSLATE_ORE)
+                .add(ModBlocks.ALEXANDRITE_DEEPSLATE_ORE);
     }
 }

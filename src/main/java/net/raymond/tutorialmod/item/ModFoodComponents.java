@@ -17,6 +17,14 @@ public class ModFoodComponents {
             .statusEffect(new StatusEffectInstance(StatusEffects.SPEED, 200, 0), 0.75F)
             .build();
 
+    public static final FoodComponent COOKED_EGG = new FoodComponent.Builder()
+            .nutrition(5)
+            .saturationModifier(0.25f)
+            .build();
 
-
+    public static final FoodComponent PEAR = new FoodComponent.Builder()
+            .nutrition(3)
+            .saturationModifier(0.25f)
+            .snack()
+            .build();
 }

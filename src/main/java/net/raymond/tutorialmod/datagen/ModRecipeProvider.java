@@ -2,6 +2,11 @@ package net.raymond.tutorialmod.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
+import net.minecraft.item.Item;
+import net.minecraft.item.Items;
+import net.minecraft.recipe.BlastingRecipe;
+import net.minecraft.recipe.RecipeSerializer;
+import net.minecraft.recipe.SmokingRecipe;
 import net.raymond.tutorialmod.TutorialMod;
 import net.raymond.tutorialmod.block.ModBlocks;
 import net.raymond.tutorialmod.item.ModItems;
@@ -19,6 +24,12 @@ import java.util.concurrent.CompletableFuture;
 public class ModRecipeProvider extends FabricRecipeProvider {
     public ModRecipeProvider(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
         super(output, registriesFuture);
+    }
+
+    public static void offerSmoking(
+            RecipeExporter exporter, List<ItemConvertible> inputs, RecipeCategory category, ItemConvertible output, float experience, int cookingTime, String group
+    ) {
+        offerMultipleOptions(exporter, RecipeSerializer.SMOKING, SmokingRecipe::new, inputs, category, output, experience, cookingTime, group, "_from_smoking");
     }
 
     //PINK GARNET
@@ -59,6 +70,23 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerBlasting(exporter, BISMUTH_SMELTABLES, RecipeCategory.MISC, ModItems.BISMUTH, 0.25f, 100, "bismuth");
 
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.BISMUTH, RecipeCategory.DECORATIONS, ModBlocks.BISMUTH_BLOCK);
+
+        //ALEXANDRITE
+        List<ItemConvertible> ALEXANDRITE_SMELTABLES = List.of(ModItems.RAW_ALEXANDRITE, ModBlocks.ALEXANDRITE_ORE,
+                ModBlocks.ALEXANDRITE_DEEPSLATE_ORE);
+
+        offerSmelting(exporter, ALEXANDRITE_SMELTABLES, RecipeCategory.MISC, ModItems.ALEXANDRITE, 0.25f, 200, "alexandrite");
+        offerBlasting(exporter, ALEXANDRITE_SMELTABLES, RecipeCategory.MISC, ModItems.ALEXANDRITE, 0.25f, 100, "alexandrite");
+
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.ALEXANDRITE, RecipeCategory.DECORATIONS, ModBlocks.ALEXANDRITE_BLOCK);
+
+        //SUNNY-SIDE UP EGG
+        List<ItemConvertible> FOOD_SMELTABLES = List.of(Items.EGG);
+
+        offerSmelting(exporter, FOOD_SMELTABLES, RecipeCategory.MISC, ModItems.COOKED_EGG, 0.25f, 200, "cooked_egg");
+        offerSmoking(exporter, FOOD_SMELTABLES, RecipeCategory.MISC, ModItems.COOKED_EGG, 0.25f, 100, "cooked_egg");
+
+
     }
 
 

@@ -21,6 +21,8 @@ public class ModItemGroups {
 
                         entries.add(ModItems.CHISEL);
                         entries.add(ModItems.CAULIFLOWER);
+                        entries.add(ModItems.PEAR);
+                        entries.add(ModItems.COOKED_EGG);
                         entries.add(ModItems.COKE);
                         entries.add(ModItems.STARLIGHT_ASHES);
                     }).build());
@@ -60,6 +62,23 @@ public class ModItemGroups {
                         entries.add(ModBlocks.BISMUTH_DEEPSLATE_ORE);
 
                     }).build());
+
+    public static final ItemGroup ALEXANDRITE_GROUP = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(TutorialMod.MOD_ID, "alexandrite_group"),
+            FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.ALEXANDRITE))
+                    .displayName(Text.translatable("itemgroup.tutorialmod.alexandrite_group"))
+                    .entries((displayContext, entries) -> {
+                        entries.add(ModItems.ALEXANDRITE);
+                        entries.add(ModItems.RAW_ALEXANDRITE);
+
+                        entries.add(ModBlocks.ALEXANDRITE_BLOCK);
+                        entries.add(ModBlocks.ALEXANDRITE_ORE);
+                        entries.add(ModBlocks.ALEXANDRITE_DEEPSLATE_ORE);
+
+                    }).build());
+
+
+
 
 
     public static void registerItemGroups() {

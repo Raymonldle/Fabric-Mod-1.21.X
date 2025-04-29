@@ -24,6 +24,10 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BISMUTH_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BISMUTH_DEEPSLATE_ORE);
 
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ALEXANDRITE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ALEXANDRITE_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ALEXANDRITE_DEEPSLATE_ORE);
+
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MAGIC_BLOCK);
     }
 
@@ -35,8 +39,13 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.BISMUTH, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAW_BISMUTH, Models.GENERATED);
 
+        itemModelGenerator.register(ModItems.ALEXANDRITE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RAW_ALEXANDRITE, Models.GENERATED);
+
         itemModelGenerator.register(ModItems.CAULIFLOWER, Models.GENERATED);
         itemModelGenerator.register(ModItems.COKE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.COOKED_EGG, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PEAR, Models.GENERATED);
         itemModelGenerator.register(ModItems.CHISEL, Models.GENERATED);
         itemModelGenerator.register(ModItems.STARLIGHT_ASHES, Models.GENERATED);
     }
