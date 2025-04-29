@@ -80,6 +80,7 @@ public class ModItemGroups {
                         entries.add(ModItems.CAULIFLOWER);
                         entries.add(ModItems.PEAR);
                         entries.add(ModItems.COOKED_EGG);
+                        entries.add(ModItems.BROCCOLI);
                         entries.add(ModItems.COKE);
                         entries.add(ModItems.STARLIGHT_ASHES);
                         entries.add(ModBlocks.MAGIC_BLOCK);

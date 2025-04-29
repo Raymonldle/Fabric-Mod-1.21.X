@@ -88,6 +88,18 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerSmelting(exporter, FOOD_SMELTABLES, RecipeCategory.MISC, ModItems.COOKED_EGG, 0.25f, 200, "cooked_egg");
         offerSmoking(exporter, FOOD_SMELTABLES, RecipeCategory.MISC, ModItems.COOKED_EGG, 0.25f, 100, "cooked_egg");
 
+        //COKE
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.COKE)
+                .pattern("RRR")
+                .pattern("ROR")
+                .pattern("RRR")
+                .input('R', Items.SUGAR)
+                .input('O', Items.GLASS_BOTTLE)
+                .criterion(hasItem(Items.SUGAR), conditionsFromItem(Items.SUGAR))
+                .criterion(hasItem(Items.GLASS_BOTTLE), conditionsFromItem(Items.GLASS_BOTTLE))
+                .offerTo(exporter);
+
+
 
     }
 

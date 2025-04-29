@@ -11,6 +11,7 @@
   "item.tutorialmod.cooked_egg": "Sunny-Side Up Egg",
   "item.tutorialmod.coke": "Coke",
   "item.tutorialmod.pear": "Pear",
+  "item.tutorialmod.broccoli": "Broccoli",
   "item.tutorialmod.starlight_ashes": "Starlight Ashes",
 
   "block.tutorialmod.pink_garnet_block": "Block of Pink Garnet",
@@ -41,6 +42,7 @@
   "tooltip.tutorialmod.coke.tooltip": "Reminds me of Danny Nguyen...",
   "tooltip.tutorialmod.cooked_egg.tooltip": "I need more §9PROTEIN!§r",
   "tooltip.tutorialmod.pear.tooltip": "I bet I can eat it in one bite",
+  "tooltip.tutorialmod.broccoli.tooltip": "Good source of Iron",
 
   "block.tutorialmod.pink_garnet_lamp": "Pink Garnet Lamp",
 
